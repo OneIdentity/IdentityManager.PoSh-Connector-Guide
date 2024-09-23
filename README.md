@@ -1,22 +1,22 @@
-﻿**One Identity open source projects are supported through [One Identity GitHub issues](https://github.com/OneIdentity/IdentityManager.PoSh-Connector-Guide/issues) and the [One Identity Community](https://www.oneidentity.com/community/). This includes all scripts, plugins, SDKs, modules, code snippets or other solutions. For assistance with any One Identity GitHub project, please raise a new Issue on the [One Identity GitHub project](https://github.com/OneIdentity/IdentityManager.PoSh-Connector-Guide/issues) page. You may also visit the [One Identity Community](https://www.oneidentity.com/community/) to ask questions. Requests for assistance made through official One Identity Support will be referred back to GitHub and the One Identity Community forums where those requests can benefit all users.**
+**One Identity open source projects are supported through [One Identity GitHub issues](https://github.com/OneIdentity/IdentityManager.PoSh-Connector-Guide/issues) and the [One Identity Community](https://www.oneidentity.com/community/). This includes all scripts, plugins, SDKs, modules, code snippets or other solutions. For assistance with any One Identity GitHub project, please raise a new Issue on the [One Identity GitHub project](https://github.com/OneIdentity/IdentityManager.PoSh-Connector-Guide/issues) page. You may also visit the [One Identity Community](https://www.oneidentity.com/community/) to ask questions. Requests for assistance made through official One Identity Support will be referred back to GitHub and the One Identity Community forums where those requests can benefit all users.**
 
 # PowerShell Connector Guide
 An in-depth guide to the PowerShell connector of Identity Manager.
 
 # Table of Contents
-- [PowerShell Connector](#PowerShell-connector)
-  - [Some PowerShell basics](#some-PowerShell-basics)
-    - [PowerShell hosts](#PowerShell-hosts)
+- [PowerShell Connector](#powershell-connector)
+  - [Some PowerShell basics](#some-powershell-basics)
+    - [PowerShell hosts](#powershell-hosts)
     - [Runspaces](#runspaces)
     - [Command(let)s](#commandlets)
     - [Pipeline](#pipeline)
     - [Output](#output)
   - [Some Synchronization framework basics](#some-synchronization-framework-basics)
     - [Connections](#connections)
-    - [Target system schema](#targetsystem-schema)
+    - [Target system schema](#target-system-schema)
     - [Query data](#query-data)
     - [Modify data](#modify-data)
-  - [The PowerShell connector XML definition format](#the-PowerShell-connector-xml-definition-format)
+  - [The PowerShell connector XML definition format](#the-powershell-connector-xml-definition-format)
     - [The ConnectorDefinition element](#the-connectordefinition-element)
     - [The PluginAssemblies element](#the-pluginassemblies-element)
     - [The ConnectionParameters element](#the-connectionparameters-element)
@@ -49,7 +49,7 @@ An in-depth guide to the PowerShell connector of Identity Manager.
   - [Sample connector](#sample-connector)
     - [Prerequisites:](#prerequisites)
     - [XML definition](#xml-definition)
-- [License](#License)
+- [License](#license)
 
 # PowerShell Connector
 
@@ -200,12 +200,12 @@ This root element provides some basic information about the contents of the defi
 
  ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<PowerShellConnectorDefinition Id="MGraph" Version="1.0" Description="Basic Microsoft Graph connector">
+<PowershellConnectorDefinition Id="MGraph" Version="1.0" Description="Basic Microsoft Graph connector">
     ...
-</PowerShellConnectorDefinition>
+</PowershellConnectorDefinition>
 ```
 
-The *PowerShellConnectorDefinition* element has the following four sub elements:
+The *PowershellConnectorDefinition* element has the following four sub elements:
 - [PluginAssemblies](#the-pluginassemblies-element)
 - [ConnectionParameters](#the-connectionparameters-element)
 - [Initialization](#the-initialization-element)
@@ -1149,7 +1149,7 @@ The demo definition supports users, groups, and membership of users in groups fo
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<PowerShellConnectorDefinition Id="MGraph" Version="1.0" Description="Basic Microsoft Graph connector">
+<PowershellConnectorDefinition Id="MGraph" Version="1.0" Description="Basic Microsoft Graph connector">
     
     <PluginAssemblies/>
     <ConnectionParameters>
@@ -1894,7 +1894,7 @@ The demo definition supports users, groups, and membership of users in groups fo
             </MethodConfiguration>            
         </Class>
     </Schema>
-</PowerShellConnectorDefinition>
+</PowershellConnectorDefinition>
 ``` 
 
 <!-- LICENSE -->
