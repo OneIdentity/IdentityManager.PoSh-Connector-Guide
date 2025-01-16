@@ -179,7 +179,7 @@ Besides queries, a connector can perform other actions (methods) on/with system 
 
 For modifications at property level, the synchronization engine uses different modes similar to the LDAP protocol. It can *replace* or *modify* values. *Modify* is only possible for multi-valued attributes and might consist of *Add* and *Remove* operations for individual attribute values. A common example is adding/removing users to a group vs. replacing the complete list of members at once.
 
-For a deeper dive into the synchronization concepts, have a look at [this document](https://connect.oneidentity.com/products/identity-manager/w/knowledge-base/653/synchronization-technology-walkthrough-and-reference) available in the [CONNECT community](https://connect.oneidentity.com/products/identity-manager/)
+For a deeper dive into the synchronization concepts, have a look at [this document](https://github.com/OneIdentity/IdentityManager.PoSh-Connector-Guide/blob/main/One%20Identity%20Manager%208.0%20Synchronization%20Technology.pdf)
 
 ## The PowerShell connector XML definition format
 
